@@ -1,15 +1,8 @@
-
-from PyQt5.QtCore import QUrl
-from PyQt5.QtWebKitWidgets import QWebView
-from PyQt5.QtWidgets import QApplication
+from setImg import set_wallpaper
 
 if __name__ == "__main__":
-    import sys
 
-    app = QApplication(sys.argv)
-
-    browser = QWebView()
-    browser.load(QUrl("https://baidu.com"))
-    browser.show()
-
-    sys.exit(app.exec_())
+    img = "E:\\壁纸\\1543064300176.jpg"
+    print(u'正在设置图片:%s为桌面壁纸...' % img)
+    set_wallpaper(img)
+    print(u'成功应用图片:%s为桌面.壁纸...' % img)
